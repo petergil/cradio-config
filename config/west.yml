@@ -4,11 +4,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petergil-gh
+      url-base: https://github.com/petergil
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: petergil-zmk-keymap
+      remote: petergil-gh
+      repo-path: zmk-keymap
+      revision: main
+      import: west.yml
   self:
     path: config
