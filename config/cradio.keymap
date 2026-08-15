@@ -11,12 +11,4 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define HOST_OS 1  // Linux
-#include "../zmk-nodefree-config/include/zmk-helpers/helper.h"
-#include "../zmk-nodefree-config/include/zmk-helpers/unicode-chars/swedish.dtsi"
-#include "../zmk-nodefree-config/include/zmk-helpers/key-labels/34.h"
-
-#include "../petergil-zmk-keymap/layers.h"
-#include "../petergil-zmk-keymap/behaviors.dtsi"
-#include "../petergil-zmk-keymap/chars.dtsi"
-#include "../petergil-zmk-keymap/combos.dtsi"
-#include "../petergil-zmk-keymap/keymap.dtsi"
+#include "petergil-zmk-keymap/keymap.dtsi"
